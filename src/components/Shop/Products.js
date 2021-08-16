@@ -38,6 +38,7 @@ const Products = (props) => {
             title={item.title}
             price={item.price}
             description={item.desciprtion}
+            id={item.id}
             key={item.id}
           />
         ))}
