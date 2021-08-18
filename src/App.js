@@ -8,7 +8,7 @@ function App() {
   const isVisible = useSelector((state) => state.ui.careIsVisible);
   const cart = useSelector((state) => state.cart);
   useEffect(() => {
-    fetch("https://react-http-bb182-default-rtdb.firebaseio.com/cart.json", {
+    fetch("https://react-redux-6d841-default-rtdb.firebaseio.com/cart.json", {
       method: "PUT",
       body: JSON.stringify(cart),
     });
